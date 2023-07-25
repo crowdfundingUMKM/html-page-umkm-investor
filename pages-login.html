@@ -66,17 +66,22 @@
                   <form class="row g-3 needs-validation" novalidate>
 
                     <div class="col-12">
-                      <label for="yourEmail" class="form-label">Username</label>
+                      <label for="yourEmail" class="form-label">Email</label>
                       <div class="input-group has-validation">
-                        <input type="text" name="username" class="form-control" id="yourEmail" required>
+                        <input type="text" name="email" class="form-control" id="yourEmail" required>
                         <div class="invalid-feedback">Tolong, masukan email anda</div>
                       </div>
                     </div>
 
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
-                      <div class="invalid-feedback">Tolong, Masukan password anda!</div>
+                      <div class="input-group has-validation">
+                        <div class="input-group-append">
+                          <button type="button" id="showHideBtn" onclick="togglePasswordVisibility()" class="btn btn-outline-secondary"><i class="bi bi-eye-slash"></i></button>
+                        </div>
+                        <input type="password" name="password" class="form-control" id="yourPassword" required>
+                        <div class="invalid-feedback">Tolong, masukkan password anda!</div>
+                      </div>
                     </div>
 
                     <div class="col-12">
