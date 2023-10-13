@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pembayaran Pending / Investor Mode</title>
+  <title>Pembayaran Berhasil / Investor Mode</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -293,24 +293,24 @@
       </a>
       <ul id="payment-status" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
         <li>
-          <a href="pembayaran-sukses.html" >
+          <a href="transaction-sukses.html" class="active">
             <i class="bi bi-circle"></i><span class="text-success">Pembayaran Sukses</span>
           </a>
         </li>
         <li>
-          <a href="pembayaran-pending.html" class="active">
+          <a href="transaction-pending.html">
             <i class="bi bi-circle"></i><span class="text-warning">Pembayaran Pending</span>
           </a>
         </li>
         <li>
-          <a href="pembayaran-failure.html">
+          <a href="transaction-failure.html">
             <i class="bi bi-circle"></i><span class=" text-danger">Pembayaran Batal</span>
           </a>
         </li>
       </ul>
     </li>
     <!-- End List Camapign-->
-   
+
     <!-- Notif Admin -->
     <li class="nav-item side-service">
       <a class="nav-link collapsed" data-bs-target="#side-notif-admin" data-bs-toggle="collapse" href="#">
@@ -355,27 +355,26 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Pembayaran Pending</h1>
+      <h1>Pembayaran Sukses</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Pembayaran</li>
-          <li class="breadcrumb-item active">Pembayaran Pending</li>
+          <li class="breadcrumb-item active">Pembayaran Sukses</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <div class="col-lg">
       <div class="alert alert-info alert-dismissible fade show" role="alert">
-        <h5 class="alert-heading">Tentang Pembayaran Pending</h5>
-      <p>Halaman Pembayaran Pending adalah halaman yang menunjukkan bahwa Anda telah memulai transaksi donasi pada campaign UMKM, namun pembayaran tersebut masih dalam status pending karena belum selesai. Untuk menyelesaikan pembayaran, Anda dapat klik tombol link yang disediakan untuk mengarahkan Anda ke halaman pembayaran dan menyelesaikan proses donasi dengan metode pembayaran yang telah Anda pilih sebelumnya. Pastikan untuk menyelesaikan pembayaran agar donasi Anda dapat diproses dengan sukses.</p>
+        <h5 class="alert-heading">Tentang Pembayaran Sukses</h5>
+      <p>Anda dapat melihat bahwa pembayaran Anda telah berhasil dan mengetahui jumlah donasi yang Anda berikan untuk mendukung proyek tersebut. Selain itu, Anda juga dapat melihat status campaign yang telah Anda donasi di halaman ini untuk memantau perkembangan proyek yang Anda dukung.</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
     </div>
 
     <section class="section dashboard">
       <div class="row">
-
         <!-- Left side columns -->
         <div class="col-lg">
           <div class="row">
@@ -394,7 +393,6 @@
                         <th scope="col">Campign UMKM</th>
                         <th scope="col">Anda Bayar</th>
                         <th scope="col">Status Transaksi</th>
-                        <th scope="col">Link</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -403,32 +401,28 @@
                         <td>Brandon Jacob</td>
                         <td><a href="#" class="text-primary">At praesentium minu</a></td>
                         <td>Rp.600.400</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                        <td><a href="#"><button type="button"class="btn btn-primary btn-sm">Link</button></a></td>
+                        <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2049</a></th>
                         <td>Ashleigh Langosh</td>
                         <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
                         <td>$147</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                        <td><a href="#"><button type="button"class="btn btn-primary btn-sm">Link</button></a></td>
+                        <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2644</a></th>
                         <td>Raheem Lehner</td>
                         <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
                         <td>$165</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                        <td><a href="#"><button type="button"class="btn btn-primary btn-sm">Link</button></a></td>
+                        <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2645</a></th>
                         <td>Anthony Leonhard</td>
                         <td><a href="#" class="text-primary">Sunt yuliotos distinctio</a></td>
                         <td>$165</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                        <td><a href="#"><button type="button"class="btn btn-primary btn-sm">Link</button></a></td>
+                        <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -436,9 +430,12 @@
 
               </div>
             </div><!-- End Transaksi -->
+
+            
+
           </div>
         </div><!-- End Left side columns -->
-
+      </div>
     </section>
 
   </main><!-- End #main -->
